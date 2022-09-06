@@ -1,4 +1,4 @@
-@Library('app-library@master')_
+@Library('jenkins-shared-lib@master')_
 node
 {
 stage('Gitcheckout')
