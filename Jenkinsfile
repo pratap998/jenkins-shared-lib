@@ -3,6 +3,6 @@ node
 {
 stage('Gitcheckout')
 {
-   sourcecheckour("https://github.com/pratap998/demo-app.js.git","master")
+   sourcecheckout("https://github.com/pratap998/demo-app.js.git","master")
 }
 }
