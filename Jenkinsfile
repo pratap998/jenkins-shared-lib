@@ -9,7 +9,7 @@ stage('Gitcheckout')
 stage ('preparation') {
       steps {
         script {
-          docker build -t app-demo .
+          "docker build -t app-demo ."
              }
       }
     }
