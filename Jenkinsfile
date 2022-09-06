@@ -8,6 +8,6 @@ stage('Gitcheckout')
 }
 stage('Docker image')
 {
-   dokckerfile("docker build -t app-demo .")
+   dockerfile("docker build -t app-demo .")
 }
 }
