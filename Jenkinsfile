@@ -3,7 +3,7 @@
 stages {
   stage('Clone')
     steps {
-        script "git clone https://github.com/pratap998/demo-app.js.git"
+        script "git clone https://github.com/pratap998/jenkins-shared-lib.git"
     }
     stage('image')
     steps {
