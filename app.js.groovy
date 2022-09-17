@@ -1,5 +1,4 @@
-const express = require('express')
-const app = express()
-
-app.get('/', (req, res) => res.send('Hello World!'))
-app.listen(3000, () => console.log('Server ready'))
+#!/usr/bin/env groovy
+def call(String name = 'human') {
+echo "Hello, ${name}."
+}
