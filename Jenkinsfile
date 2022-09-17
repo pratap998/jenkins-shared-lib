@@ -1,15 +1,6 @@
 @Library('jenkins-shared-lib@master')_
-node
-{
-stage('Gitcheckout')
-{
-   sourcecheckout("https://github.com/pratap998/jenkins-shared-lib.git","master")
+
+stage('demo') {
+   echo 'hello world'
+   sayHello 'pratap'
 }
-}
-stage ('preparation') {
-      steps {
-        script {
-          "docker build -t app-demo ."
-             }
-      }
-    }
