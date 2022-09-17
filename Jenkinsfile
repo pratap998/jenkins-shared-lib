@@ -1,8 +1,15 @@
-@Library('app-library@master')_
+@Library('jenkins-shared-lib@master')_
 node
 {
 stage('Gitcheckout')
 {
-   sourcecheckour("https://github.com/pratap998/demo-app.js.git","master")
+   sourcecheckout("https://github.com/pratap998/demo-app.js.git","master")
 }
 }
+stage ('preparation') {
+      steps {
+        script {
+          "docker build -t app-demo ."
+             }
+      }
+    }
