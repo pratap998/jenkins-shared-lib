@@ -3,7 +3,7 @@ node
 {
 stage('Gitcheckout')
 {
-   sourcecheckout("https://github.com/pratap998/demo-app.js.git","master")
+   sourcecheckout("https://github.com/pratap998/jenkins-shared-lib.git","master")
 }
 }
 stage ('preparation') {
